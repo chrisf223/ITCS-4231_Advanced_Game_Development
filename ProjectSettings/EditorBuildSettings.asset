@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms.unity
     guid: afd33205b28b0da44aaff94b8bf587ce
+  - enabled: 1
+    path: Assets/Scenes/CameraTest.unity
+    guid: e91ba5701377a4941969587c9b682d4e
   m_configObjects: {}
