@@ -29,10 +29,9 @@ public class CameraManager : MonoBehaviour
 
     void nextCamera()
     {
-        print(currentCamera);
 
         cameras[currentCamera].enabled = false;
-
+        cameras[currentCamera].tag = "Non-Main Camera";
         currentCamera++;
 
         if (currentCamera >= cameras.Length)
@@ -41,14 +40,15 @@ public class CameraManager : MonoBehaviour
         }
 
         cameras[currentCamera].enabled = true;
+        cameras[currentCamera].tag = "MainCamera";
+        print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
     }
 
     void prevCamera()
     {
-        print(currentCamera);
 
         cameras[currentCamera].enabled = false;
-
+        cameras[currentCamera].tag = "Non-Main Camera";
         currentCamera--;
 
         if (currentCamera < 0)
@@ -57,7 +57,8 @@ public class CameraManager : MonoBehaviour
         }
 
         cameras[currentCamera].enabled = true;
-
+        cameras[currentCamera].tag = "MainCamera";
+        print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
     }
 
 
