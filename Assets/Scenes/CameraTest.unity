@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 38443085}
   - component: {fileID: 38443084}
   - component: {fileID: 38443083}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 57599537}
   - component: {fileID: 57599536}
   - component: {fileID: 57599535}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 83993052}
   m_Layer: 0
   m_Name: Camera_4
-  m_TagString: Untagged
+  m_TagString: Non-Main Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -960,6 +960,14 @@ PrefabInstance:
     - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
       propertyPath: m_Name
       value: CeilingLight1Flicker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649225597432403553, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1389,7 +1397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 271877762}
   - component: {fileID: 271877763}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1802,7 +1810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355360920}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1935,7 +1943,7 @@ GameObject:
   - component: {fileID: 405589469}
   - component: {fileID: 405589468}
   - component: {fileID: 405589467}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2324,7 +2332,7 @@ GameObject:
   - component: {fileID: 441402696}
   - component: {fileID: 441402695}
   - component: {fileID: 441402694}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2429,7 +2437,7 @@ GameObject:
   - component: {fileID: 450510347}
   - component: {fileID: 450510346}
   - component: {fileID: 450510345}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,7 +3088,7 @@ GameObject:
   - component: {fileID: 558573415}
   - component: {fileID: 558573414}
   - component: {fileID: 558573413}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3251,7 +3259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580055750}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3597,7 +3605,7 @@ GameObject:
   - component: {fileID: 736672071}
   m_Layer: 0
   m_Name: Camera_2
-  m_TagString: Untagged
+  m_TagString: Non-Main Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3688,7 +3696,7 @@ GameObject:
   - component: {fileID: 739788377}
   - component: {fileID: 739788376}
   - component: {fileID: 739788375}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4134,7 +4142,7 @@ GameObject:
   - component: {fileID: 777490961}
   - component: {fileID: 777490960}
   - component: {fileID: 777490959}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4280,7 +4288,7 @@ GameObject:
   - component: {fileID: 793548164}
   - component: {fileID: 793548163}
   - component: {fileID: 793548162}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4384,7 +4392,7 @@ GameObject:
   - component: {fileID: 799903554}
   - component: {fileID: 799903556}
   - component: {fileID: 799903555}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4627,7 +4635,7 @@ GameObject:
   - component: {fileID: 810015038}
   - component: {fileID: 810015037}
   - component: {fileID: 810015036}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4918,7 +4926,7 @@ GameObject:
   - component: {fileID: 834735477}
   m_Layer: 0
   m_Name: Camera_3
-  m_TagString: Untagged
+  m_TagString: Non-Main Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5007,7 +5015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 841693684}
   - component: {fileID: 841693685}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5640,7 +5648,7 @@ GameObject:
   - component: {fileID: 943564646}
   m_Layer: 0
   m_Name: Camera_1
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6618,7 +6626,7 @@ GameObject:
   - component: {fileID: 1105872275}
   m_Layer: 0
   m_Name: Camera_5
-  m_TagString: Untagged
+  m_TagString: Non-Main Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6849,6 +6857,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CeilingLight2
       objectReference: {fileID: 0}
+    - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649225597432403553, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6948,7 +6964,7 @@ GameObject:
   - component: {fileID: 1170699500}
   - component: {fileID: 1170699499}
   - component: {fileID: 1170699498}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7136,7 +7152,7 @@ GameObject:
   - component: {fileID: 1196641468}
   - component: {fileID: 1196641467}
   - component: {fileID: 1196641466}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7464,7 +7480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249965224}
   - component: {fileID: 1249965225}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7560,7 +7576,7 @@ GameObject:
   - component: {fileID: 1251870922}
   - component: {fileID: 1251870921}
   - component: {fileID: 1251870920}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7923,7 +7939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334831090}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8030,7 +8046,7 @@ GameObject:
   - component: {fileID: 1361998692}
   - component: {fileID: 1361998691}
   - component: {fileID: 1361998690}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8310,7 +8326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374319035}
   - component: {fileID: 1374319036}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9048,7 +9064,7 @@ GameObject:
   - component: {fileID: 1495172794}
   - component: {fileID: 1495172793}
   - component: {fileID: 1495172792}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9222,7 +9238,7 @@ GameObject:
   - component: {fileID: 1506704798}
   - component: {fileID: 1506704797}
   - component: {fileID: 1506704796}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9490,7 +9506,7 @@ GameObject:
   - component: {fileID: 1543195606}
   - component: {fileID: 1543195605}
   - component: {fileID: 1543195604}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10013,7 +10029,7 @@ GameObject:
   - component: {fileID: 1634771732}
   - component: {fileID: 1634771731}
   - component: {fileID: 1634771730}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10216,6 +10232,14 @@ PrefabInstance:
     - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
       propertyPath: m_Name
       value: CeilingLight2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649225597432403553, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11113,6 +11137,14 @@ PrefabInstance:
     - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
       propertyPath: m_Name
       value: CeilingLight1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649225597432403553, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12426,6 +12458,14 @@ PrefabInstance:
     - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
       propertyPath: m_Name
       value: CeilingLight1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519110550617707107, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649225597432403553, guid: 0b7123567dcb2a14e931f2bfcecef8ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
