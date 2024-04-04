@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraManager : MonoBehaviour
+public class CameraManager : GUIManager
 {
     public Camera camera_1;
     public Camera camera_2;
@@ -61,11 +61,9 @@ public class CameraManager : MonoBehaviour
         print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    // Gets the current camera
+    public int getCurrentCamera() {
+        return currentCamera;
     }
 
     // Update is called once per frame
@@ -75,11 +73,13 @@ public class CameraManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A))
         {
             prevCamera();
+            ChangeCameraText(currentCamera);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
             nextCamera();
+            ChangeCameraText(currentCamera);
         }
 
     }
