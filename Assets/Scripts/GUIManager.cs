@@ -6,6 +6,8 @@ using TMPro;
 public class GUIManager : MonoBehaviour
 {
     public TextMeshProUGUI CameraName;
+    [SerializeField] private GameObject reportGUI;
+    [SerializeField] private GameObject defaultGUI;
 
     // Start is called before the first frame update
     void Start()
@@ -32,5 +34,17 @@ public class GUIManager : MonoBehaviour
         } else if (camNum == 4) {
             CameraName.text = "Lab";
         }
+    }
+
+    public void ChangeGUItoReporting () {
+        reportGUI.SetActive(true);
+        print("Button works!");
+        defaultGUI.SetActive(false);
+    }
+    
+    public void ChangeGUItoDeafult () {
+        reportGUI.SetActive(false);
+        print("Button works!");
+        defaultGUI.SetActive(true);
     }
 }

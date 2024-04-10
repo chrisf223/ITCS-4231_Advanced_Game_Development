@@ -19,10 +19,11 @@ public class ReportingManager : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             
-            // If it hits then 
+            // If it hits then highlight it
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.tag != "Ignore Raycast") {
                     Debug.Log("Did Hit");
+                    
                 }
             }
         }
