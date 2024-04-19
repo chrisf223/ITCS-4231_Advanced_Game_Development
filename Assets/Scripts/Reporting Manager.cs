@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ReportingManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject selectedObject;
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         // When the mouse is right-clikced on the screen, it should select and highlight an object
         if (Input.GetMouseButtonDown(0)) {
             // Shoots ray out from the camera
@@ -23,9 +18,15 @@ public class ReportingManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.tag != "Ignore Raycast") {
                     Debug.Log("Did Hit");
-                    
+                    selectedObject = GameObject.Find(SelectedObject.selectedObject);
+                    highlighter(selectedObject);
                 }
             }
         }
+    }
+
+    void highlighter(GameObject objt) {
+        objt.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+        objt.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.blue);
     }
 }
