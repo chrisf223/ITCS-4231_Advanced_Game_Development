@@ -9,14 +9,12 @@ public class SelectedObject : MonoBehaviour
     public RaycastHit theObject;
 
     void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            // Shoots ray out from the camera
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        // Shoots ray out from the camera
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out theObject)) {
-                selectedObject = theObject.transform.gameObject.name;
-                internalObject = theObject.transform.gameObject.name;
-            }
+        if (Physics.Raycast(ray, out theObject)) {
+            selectedObject = theObject.transform.gameObject.name;
+            internalObject = theObject.transform.gameObject.name;
         }
     }
 }

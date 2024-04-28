@@ -19,14 +19,12 @@ public class ReportingManager : MonoBehaviour
                 if (hit.collider.tag != "Ignore Raycast") {
                     Debug.Log("Did Hit");
                     selectedObject = GameObject.Find(SelectedObject.selectedObject);
-                    highlighter(selectedObject);
+                    //highlighter(selectedObject);
                 }
             }
         }
     }
 
-    void highlighter(GameObject objt) {
-        objt.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
-        objt.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.blue);
-    }
+
+
 }
