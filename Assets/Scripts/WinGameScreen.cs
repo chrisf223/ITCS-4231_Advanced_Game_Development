@@ -10,7 +10,6 @@ public class WinGameScreen : MonoBehaviour
     public void Setup()
     {
         gameObject.SetActive(true);
-
     }
 
     public void MainMenuButton()

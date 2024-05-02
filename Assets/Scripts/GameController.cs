@@ -13,7 +13,13 @@ public class GameController : MonoBehaviour
     public int maxAnomalies = 5;
     public int currentAnomaliesActive = 0;
 
-    public TextMeshProUGUI text;
+    // Maximum number of false reports allowed. 5 false reports = lose game
+    public int maxFalseReports = 5;
+    public int currentFalseReports = 0;
+
+    public TextMeshProUGUI timeText;
+    public TextMeshProUGUI falseReportText;
+
 
     public int startTime = 0;
     public int endTime = 6;
@@ -42,11 +48,13 @@ public class GameController : MonoBehaviour
         int truncatedTimeValue = (int)gameTime;
 
         if(truncatedTimeValue == 0) {
-            text.text = "12:00 AM";
+            timeText.text = "12:00 AM";
         } else
         {
-            text.text = truncatedTimeValue.ToString() + ":00 AM";
+            timeText.text = truncatedTimeValue.ToString() + ":00 AM";
         }
+
+        falseReportText.text = "False Reports: " + currentFalseReports.ToString() + "/5";
 
         if(currentAnomaliesActive > maxAnomalies)
         {
@@ -54,13 +62,20 @@ public class GameController : MonoBehaviour
             GameOver();
         }
 
-        if(gameTime >= levelDuration)
+        if (currentFalseReports >= maxFalseReports)
+        {
+            this.enabled = false;
+            GameOver();
+        }
+
+        if (gameTime >= levelDuration)
         {
             this.enabled = false;
             WinGame();
         }
         
-        // Auto Win/Lose Game, for testing only
+        
+        // Auto Win/Lose Game, increase false reports and active anomaly count, for testing only
         if (Input.GetKeyDown(KeyCode.W))
         {
             this.enabled = false;
@@ -71,7 +86,14 @@ public class GameController : MonoBehaviour
             this.enabled = false;
             GameOver();
         }
-
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            currentFalseReports++;
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            currentAnomaliesActive++;
+        }
     }
 
     public void GameOver()
