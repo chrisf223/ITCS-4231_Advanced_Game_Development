@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameOverScreen GameOverScreen;
+    //public GameObject SpawnManager
 
+    public GameOverScreen GameOverScreen;
     public WinGameScreen WinGameScreen;
 
     // Maximum amount of anomalies allowed to be active at once, more than 5 = lose game
@@ -56,53 +57,49 @@ public class GameController : MonoBehaviour
 
         falseReportText.text = "False Reports: " + currentFalseReports.ToString() + "/5";
 
-        if(currentAnomaliesActive > maxAnomalies)
+        if(GameObject.Find("SpawnManager").GetComponent<EnemiesSpawnManager>().activeEnemies > maxAnomalies || currentFalseReports >= maxFalseReports)
         {
-            this.enabled = false;
             GameOver();
         }
 
-        if (currentFalseReports >= maxFalseReports)
-        {
-            this.enabled = false;
-            GameOver();
-        }
 
         if (gameTime >= levelDuration)
         {
-            this.enabled = false;
             WinGame();
         }
         
         
-        // Auto Win/Lose Game, increase false reports and active anomaly count, for testing only
+        // Auto Win/Lose Game and increase false reports, for testing only
         if (Input.GetKeyDown(KeyCode.W))
         {
-            this.enabled = false;
             WinGame();
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
-            this.enabled = false;
             GameOver();
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
             currentFalseReports++;
         }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            currentAnomaliesActive++;
-        }
+        
     }
 
     public void GameOver()
     {
+        GameObject.Find("SpawnManager").GetComponent<EnemiesSpawnManager>().enabled = false;
+        GameObject.Find("CamManager").GetComponent<CameraManager>().enabled = false;
+        this.enabled = false;
+
         GameOverScreen.Setup();
     }
 
     public void WinGame()
     {
+        GameObject.Find("SpawnManager").GetComponent<EnemiesSpawnManager>().enabled = false;
+        GameObject.Find("CamManager").GetComponent<CameraManager>().enabled = false;
+        this.enabled = false;
+
         WinGameScreen.Setup();
     }
 
