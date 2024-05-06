@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Non-Main Camera
+  - Enemies
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemies
   - Water
   - UI
   - 

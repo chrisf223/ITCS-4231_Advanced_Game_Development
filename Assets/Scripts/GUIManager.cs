@@ -16,12 +16,6 @@ public class GUIManager : MonoBehaviour
         CameraName.text = "Kitchen";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChangeCameraText(int camNum) {
         //print("Current num got: " + camNum);
         if (camNum == 0) {
@@ -37,14 +31,14 @@ public class GUIManager : MonoBehaviour
         }
     }
 
-    public void ChangeGUItoReporting () {
+    public void ChangeGUItoReporting() {
         reportGUI.SetActive(true);
         //print("Button works!");
         defaultGUI.SetActive(false);
         GUIRepoOn = true;
     }
     
-    public void ChangeGUItoDeafult () {
+    public void ChangeGUItoDeafult() {
         reportGUI.SetActive(false);
         //print("Button works!");
         defaultGUI.SetActive(true);
