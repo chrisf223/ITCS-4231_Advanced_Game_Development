@@ -17,9 +17,9 @@ public class ReportingManager : MonoBehaviour
             // If it hits then highlight it
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.tag != "Ignore Raycast") {
-                    Debug.Log("Did Hit");
+                    //Debug.Log("Did Hit");
                     selectedObject = GameObject.Find(SelectedObject.selectedObject);
-                    //highlighter(selectedObject);
+                    Debug.Log("Object Hit: " + selectedObject);
                 }
             }
         }

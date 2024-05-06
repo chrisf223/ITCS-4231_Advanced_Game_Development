@@ -207,8 +207,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 525087013}
-        m_TargetAssemblyTypeName: MainMenuScreen, Assembly-CSharp
-        m_MethodName: StartButton
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: GoToGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 525087008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cdf0a898a81c664daa7e3d352e5ca70, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f27b897a247dd4297d8a58ccc0403d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &600966495

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Highlighter : MonoBehaviour
 {
     // Initalizing fields
-
     public bool isHighlighted = false;
 
     // Update is called once per frame

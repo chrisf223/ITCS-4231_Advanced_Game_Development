@@ -19,11 +19,11 @@ public class GUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ChangeCameraText();
+        
     }
 
     public void ChangeCameraText(int camNum) {
-        print("Current num got: " + camNum);
+        //print("Current num got: " + camNum);
         if (camNum == 0) {
             CameraName.text = "Kitchen";
         } else if (camNum == 1) {
@@ -39,14 +39,14 @@ public class GUIManager : MonoBehaviour
 
     public void ChangeGUItoReporting () {
         reportGUI.SetActive(true);
-        print("Button works!");
+        //print("Button works!");
         defaultGUI.SetActive(false);
         GUIRepoOn = true;
     }
     
     public void ChangeGUItoDeafult () {
         reportGUI.SetActive(false);
-        print("Button works!");
+        //print("Button works!");
         defaultGUI.SetActive(true);
         GUIRepoOn = false;
     }

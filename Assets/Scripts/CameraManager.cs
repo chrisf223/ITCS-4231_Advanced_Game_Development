@@ -41,7 +41,7 @@ public class CameraManager : GUIManager
 
         cameras[currentCamera].enabled = true;
         cameras[currentCamera].tag = "MainCamera";
-        print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
+        //print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
     }
 
     void prevCamera()
@@ -58,7 +58,7 @@ public class CameraManager : GUIManager
 
         cameras[currentCamera].enabled = true;
         cameras[currentCamera].tag = "MainCamera";
-        print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
+        //print("Camera: " + currentCamera + " Tag: " + cameras[currentCamera].tag);
     }
 
     // Gets the current camera
