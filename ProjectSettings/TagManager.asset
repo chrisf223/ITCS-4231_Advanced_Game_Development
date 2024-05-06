@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Non-Main Camera
   - Enemies
+  - Audio
   layers:
   - Default
   - TransparentFX

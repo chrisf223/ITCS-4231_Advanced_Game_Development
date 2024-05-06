@@ -8,6 +8,14 @@ public class ReportingManager : MonoBehaviour
     public GameObject selectedObject;
     public TextMeshProUGUI mainText;
     private int left = 0;
+    AudioManager audioManager;
+    public GameController gc; 
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+    }
 
     // Update is called once per frame
     void Update() {
@@ -30,14 +38,18 @@ public class ReportingManager : MonoBehaviour
                     Debug.Log("Did Hit Enemy");
                 } else if(hit.collider.tag != "Ignore Raycast" && hit.collider.tag != "Enemies") {
                     left++;
-                    mainText.text = "False Reports: " + left + "/5";
+                    if (left >= 5) {
+                        gc.GameOver();
+                    }
+                    else {
+                        mainText.text = "False Reports: " + left + "/5";
+                        audioManager.PlaySFX(audioManager.incorrect);
+                    }
+                    
                 }
             }
         }
 
-        if (left == 5) {
-            
-        }
     }
 
 

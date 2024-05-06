@@ -32,6 +32,13 @@ public class GameController : MonoBehaviour
     // How much RL time has actually passed;
     float actualTime = 0.0f;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -90,7 +97,7 @@ public class GameController : MonoBehaviour
         GameObject.Find("SpawnManager").GetComponent<EnemiesSpawnManager>().enabled = false;
         GameObject.Find("CamManager").GetComponent<CameraManager>().enabled = false;
         this.enabled = false;
-
+        audioManager.PlaySFX(audioManager.defeat);
         GameOverScreen.Setup();
     }
 
@@ -99,7 +106,7 @@ public class GameController : MonoBehaviour
         GameObject.Find("SpawnManager").GetComponent<EnemiesSpawnManager>().enabled = false;
         GameObject.Find("CamManager").GetComponent<CameraManager>().enabled = false;
         this.enabled = false;
-
+        audioManager.PlaySFX(audioManager.victory);
         WinGameScreen.Setup();
     }
 

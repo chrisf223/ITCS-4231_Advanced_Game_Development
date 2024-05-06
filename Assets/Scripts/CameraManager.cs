@@ -14,6 +14,8 @@ public class CameraManager : GUIManager
 
     protected int currentCamera;
 
+    AudioManager audioManager;
+
     private void Awake()
     {
         cameras = new Camera[5];
@@ -24,6 +26,8 @@ public class CameraManager : GUIManager
         cameras[2] = camera_3;
         cameras[3] = camera_4;
         cameras[4] = camera_5;
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
@@ -74,12 +78,14 @@ public class CameraManager : GUIManager
         {
             prevCamera();
             ChangeCameraText(currentCamera);
+            audioManager.PlaySFX(audioManager.cameraSound);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
             nextCamera();
             ChangeCameraText(currentCamera);
+            audioManager.PlaySFX(audioManager.cameraSound);
         }
 
     }
