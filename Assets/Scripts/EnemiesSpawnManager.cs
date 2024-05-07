@@ -42,7 +42,7 @@ public class EnemiesSpawnManager : MonoBehaviour
         {
             SpawnRandomEnemy();
         }
-
+        
     }
 
     void SpawnRandomEnemy() {

@@ -34,6 +34,7 @@ public class ReportingManager : MonoBehaviour
                 } else  */
                 if (hit.collider.tag == "Enemies") {
                     selectedObject = GameObject.Find(SelectedObject.selectedObject);
+                    GameObject.Find("SpawnManager").GetComponent<EnemiesSpawnManager>().activeEnemies--;
                     Destroy(selectedObject);
                     Debug.Log("Did Hit Enemy");
                 } else if(hit.collider.tag != "Ignore Raycast" && hit.collider.tag != "Enemies") {

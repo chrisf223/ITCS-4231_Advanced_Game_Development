@@ -8,7 +8,7 @@ public class ClearSelection : MonoBehaviour
     private GameObject selectedObject;
 
     public void clearAll() {
-        selectedObject = GameObject.Find(SelectedObject.selectedObject);
-        selectedObject.GetComponent<Outline>().eraseRenderer = false;
+       // selectedObject = GameObject.Find(SelectedObject.selectedObject);
+        //selectedObject.GetComponent<Outline>().eraseRenderer = false;
     }
 }
