@@ -4531,7 +4531,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 66.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10564,7 +10564,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '**Please select a highlighted object to report**'
+  m_text: '**Please select an object to report**'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9836c3e94aa2e094d86d428528d44d6d, type: 2}
   m_sharedMaterial: {fileID: 6305241925212129254, guid: 9836c3e94aa2e094d86d428528d44d6d, type: 2}
