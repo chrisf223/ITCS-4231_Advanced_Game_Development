@@ -1,10 +1,22 @@
 Group Members: DeCristo Franceschini, Brendan Rahilly, Payne Bailey, Nehemias Galvan
 
+
 Game Description: 
+
+Play as a security gaurd in a secret facility. Your task is to monitor cameras and be on the lookout for any changes (anomalies) that may occur. If you see any anomalies you must report them. If you let too many anomalies exist at once you will be overeun and the game will end. If you falsely report an anomaly 5 times your game wil lalso end. Survive until 6:00 AM to win the game. 
+
 
 Cheat Codes:
 
+W: Win Game
+
+L: Lose Game
+
+P: Add False Report
+
+
 Licensing: 
+
 Error by u_31vnwfmzt6 (pixabay.com) 
 https://pixabay.com/sound-effects/error-126627/
 
